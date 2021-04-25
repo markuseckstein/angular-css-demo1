@@ -21,10 +21,6 @@
   "projects": {
     "demo1": {
       "tags": []
-    },
-    "demo1-e2e": {
-      "tags": [],
-      "implicitDependencies": ["demo1"]
     }
   }
 }
