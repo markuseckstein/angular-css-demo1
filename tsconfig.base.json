@@ -18,8 +18,8 @@
     "paths": {}
   },
   "angularCompilerOptions": {
-    "strictTemplates": true,
-    "fullTemplateTypeCheck": true
+    "strictTemplates": false,
+    "fullTemplateTypeCheck": false
   },
   "exclude": ["node_modules", "tmp"]
 }

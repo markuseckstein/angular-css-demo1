@@ -13,6 +13,7 @@
   },
   "projects": {
     "demo1": { "tags": [] },
-    "demo-css-vars": { "tags": [] }
+    "demo-css-vars": { "tags": [] },
+    "demo-kendo": { "tags": [] }
   }
 }
