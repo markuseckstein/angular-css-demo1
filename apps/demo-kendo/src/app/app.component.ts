@@ -4,6 +4,7 @@ import { GridDataResult, PageChangeEvent } from "@progress/kendo-angular-grid";
 import { SortDescriptor } from "@progress/kendo-data-query";
 import { ProductService } from "./product.service";
 import { Observable, Subject } from "rxjs";
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'angular-css-demo1-root',
@@ -21,7 +22,8 @@ export class AppComponent {
   public sortDescriptor: SortDescriptor[] = [];
   public filterTerm: number | null = null;
 
-  constructor(private service: ProductService) {
+  constructor(private service: ProductService, public readonly themeService: ThemeService) {
+    this.themeService.switchTheme('light');
     this.loadGridItems();
   }
 

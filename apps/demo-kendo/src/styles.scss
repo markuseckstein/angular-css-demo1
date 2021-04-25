@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #e63946;
+  --secondary-color: #457b9d;
+  --background-color: #f1faee;
+}
+
+:root.dark {
+  --primary-color: #2a9d8f;
+  --secondary-color: #e9c46a;
+  --background-color: #264653;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+

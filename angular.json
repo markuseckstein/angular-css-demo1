@@ -227,12 +227,15 @@
             "aot": true,
             "assets": [
               "apps/demo-kendo/src/favicon.ico",
-              "apps/demo-kendo/src/assets"
+              "apps/demo-kendo/src/assets",
+              {
+                "glob": "*.css",
+                "input": "node_modules/@progress/kendo-theme-material/dist/",
+                "output": "/assets/kendo"
+              }
+
             ],
             "styles": [
-              {
-                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
-              },
               "apps/demo-kendo/src/styles.scss"],
             "scripts": []
           },

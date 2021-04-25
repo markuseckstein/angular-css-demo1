@@ -1,5 +1,15 @@
 <h1>Kendo UI Theming</h1>
 
+
+<p>To implement light and dark mode, we switch the pre-compiled kendo-ui stylesheet</p>
+
+<label><input type="radio" value="light" name="theme" (click)="themeService.switchTheme('light')" checked> Light</label>
+<label><input type="radio" value="dark" name="theme"  (click)="themeService.switchTheme('dark')"> Dark</label>
+
+<hr/>
+
+
+
 <p>
   <kendo-dropdownlist [data]="dropDownItems" [defaultItem]="defaultItem" textField="text" valueField="value"
   (valueChange)="handleFilterChange($event)">
