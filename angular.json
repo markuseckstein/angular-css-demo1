@@ -116,7 +116,94 @@
           }
         }
       }
+    },
+    "demo-css-vars": {
+      "projectType": "application",
+      "root": "apps/demo-css-vars",
+      "sourceRoot": "apps/demo-css-vars/src",
+      "prefix": "angular-css-demo1",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/demo-css-vars",
+            "index": "apps/demo-css-vars/src/index.html",
+            "main": "apps/demo-css-vars/src/main.ts",
+            "polyfills": "apps/demo-css-vars/src/polyfills.ts",
+            "tsConfig": "apps/demo-css-vars/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/demo-css-vars/src/favicon.ico",
+              "apps/demo-css-vars/src/assets"
+            ],
+            "styles": ["apps/demo-css-vars/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/demo-css-vars/src/environments/environment.ts",
+                  "with": "apps/demo-css-vars/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "demo-css-vars:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "demo-css-vars:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "demo-css-vars:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/demo-css-vars/src/**/*.ts",
+              "apps/demo-css-vars/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/demo-css-vars"],
+          "options": {
+            "jestConfig": "apps/demo-css-vars/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
-
   }
 }

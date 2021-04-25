@@ -1,0 +1,13 @@
+:host-context(.light) {
+  --secondary-color: darkgreen;
+}
+
+:host-context(.dark) {
+  --secondary-color: lime;
+}
+
+
+
+.special {
+  color: var(--secondary-color);
+}

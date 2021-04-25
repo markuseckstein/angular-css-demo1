@@ -1,0 +1,19 @@
+<h1>This is a theming demo</h1>
+<h2>Implemented with CSS Variables</h2>
+
+<p>To implement light and dark mode, we only use a few CSS variables</p>
+<code>
+  <pre>
+    :root {{'{'}}
+      --primary-color: #e63946;
+      --secondary-color: #457b9d;
+      --background-color: #f1faee;
+    }
+  </pre>
+</code>
+
+<input type="radio" value="light" name="theme" (click)="switchTheme('light')" checked> Light
+<input type="radio" value="dark" name="theme"  (click)="switchTheme('dark')"> Dark
+
+<hr/>
+<angular-css-demo1-sub1></angular-css-demo1-sub1>
