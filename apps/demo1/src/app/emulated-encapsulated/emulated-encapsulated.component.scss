@@ -1,3 +1,18 @@
 h2 {
   color: red;
 }
+
+.someflexlayout {
+  display: flex;
+  border: 1px solid darkseagreen;
+}
+
+.someflexlayout > div {
+  flex: 1 1 auto;
+  border: 1px dotted darkmagenta;
+  margin: 0;
+}
+
+// .someflexlayout > div:nth-of-type(2) {
+//   flex: 0 1 100px;
+// }
