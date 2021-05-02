@@ -1,6 +1,6 @@
 
 
-# AngularCssDemo1
+# Demo1
 
 
 ## Useful links
@@ -18,3 +18,9 @@ https://careerkarma.com/blog/css-inline-block/
 ### CSS Flex with examples
 
 https://www.codeinwp.com/blog/css-flexbox-tutorial/
+
+
+# DemoCssVars
+
+https://davidwalsh.name/css-variables-javascript
+https://eager.io/blog/communicating-between-javascript-and-css-with-css-variables/

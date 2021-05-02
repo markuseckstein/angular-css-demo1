@@ -17,8 +17,8 @@ export class AppComponent {
   public defaultItem = { text: 'Filter by Category', value: null };
 
   public gridItems: Observable<GridDataResult> = new Subject<GridDataResult>();
-  public pageSize: number = 10;
-  public skip: number = 0;
+  public pageSize = 10;
+  public skip = 0;
   public sortDescriptor: SortDescriptor[] = [];
   public filterTerm: number | null = null;
 

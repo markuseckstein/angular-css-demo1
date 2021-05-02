@@ -8,7 +8,7 @@ export class ThemeService {
   constructor(@Inject(DOCUMENT) private readonly doc: Document) {}
 
   switchTheme(theme: 'light' | 'dark'): void {
-    const rootNode = this.doc.getElementsByTagName('html')[0];
+    const rootNode = this.doc.documentElement;
     this.removeLinkElementFromHead();
 
     if (theme === 'dark') {

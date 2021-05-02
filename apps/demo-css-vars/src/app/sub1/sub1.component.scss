@@ -7,6 +7,9 @@
 }
 
 
+:host {
+  display: block;
+}
 
 .special {
   color: var(--secondary-color);

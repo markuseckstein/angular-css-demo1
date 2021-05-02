@@ -3,6 +3,7 @@
   --primary-color: #e63946;
   --secondary-color: #457b9d;
   --background-color: #f1faee;
+
 }
 
 :root.dark {
@@ -14,6 +15,7 @@
 body {
   background-color: var(--background-color);
   color: var(--secondary-color);
+  // transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 h1 {
