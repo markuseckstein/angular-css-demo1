@@ -1,0 +1,13 @@
+// :host {
+//   display: block;
+// }
+
+.k-button-clear {
+  border: 2px dashed salmon;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color) !important;
+}
+
+.k-button .k-icon {
+  color: var(--secondary-color);
+}

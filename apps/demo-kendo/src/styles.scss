@@ -2,12 +2,14 @@
 :root {
   --primary-color: #e63946;
   --secondary-color: #457b9d;
+  --tertiary-color: salmon;
   --background-color: #f1faee;
 }
 
 :root.dark {
   --primary-color: #2a9d8f;
   --secondary-color: #e9c46a;
+  --tertiary-color: lightgreen;
   --background-color: #264653;
 }
 
